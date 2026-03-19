@@ -16,6 +16,7 @@ export default class Renderer {
         this.renderer = new THREE.WebGLRenderer({
             canvas: this.canvas,
             antialias: true,
+            powerPreference: "high-performance",
         });
 
         this.renderer.physicallyCorrectLights = true;

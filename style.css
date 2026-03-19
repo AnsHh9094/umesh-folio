@@ -473,3 +473,58 @@ svg{
   }
 }
 
+/* Custom Email Button --------------------------------------------- */
+.custom-email-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #D14836;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.custom-email-btn:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.custom-email-btn svg {
+  margin-right: 6px;
+  fill: currentColor;
+}
+
+/* Floating Profile Image --------------------------------------------- */
+.profile-image-container {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffdd55 0%, #ff8833 100%);
+  padding: 8px; /* Border effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floating 3s ease-in-out infinite;
+  box-shadow: 0 15px 35px rgba(255, 136, 51, 0.4);
+}
+
+.floating-profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
