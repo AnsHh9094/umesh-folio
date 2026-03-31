@@ -3,6 +3,7 @@ import Experience from "../Experience.js";
 import GSAP from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 import ASScroll from "@ashthornton/asscroll";
+import DNA from "./DNA.js";
 
 export default class Controls {
     constructor() {
@@ -458,6 +459,9 @@ export default class Controls {
                 this.secondPartTimeline.add(this.seventh, "-=0.2");
                 this.secondPartTimeline.add(this.eighth);
                 this.secondPartTimeline.add(this.ninth, "-=0.1");
+                
+                // Initialize DNA sequence mapping
+                this.dna = new DNA();
             },
         });
     }
